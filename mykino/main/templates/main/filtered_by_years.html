@@ -1,0 +1,21 @@
+{%extends 'main/layout.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все фильмы</title>
+</head>
+{%block content%}
+<div class="features">
+    <h4>Все фильмы:</h4>
+    {%for i in data%}
+    <div class="alert alert-warning">
+        {{i.title|upper}}
+        <p>Жанр: {{i.genre}}. Год выпуска: {{i.year}}. Рейтинг: {{i.rating}}<i
+                class="bi bi-star"></i></p>
+        <p>{{i.description}}</p>
+    </div>
+    {%endfor%}
+
+</div>
+{%endblock%}
