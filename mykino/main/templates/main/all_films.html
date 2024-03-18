@@ -1,0 +1,22 @@
+{%extends 'main/layout.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все фильмы</title>
+</head>
+{%block content%}
+<div class="features">
+<h4>Все фильмы:</h4>
+    {% for film in films %}
+    <div class="alert alert-warning">
+        {{ film.title|upper }}
+        <img src="{{ film.photo.url }}" alt="Photo" style="width: 200px; height: auto;">
+        <p>Жанр: {{ film.genre }}. Год выпуска: {{ film.year }}. Рейтинг: {{ film.rating }}<i class="bi bi-star"></i></p>
+        <p>{{ film.description }}</p>
+        <a href="{% url 'film-detail' film.pk %}" class="btn btn-warning">Детальная информация</a>
+    </div>
+{% endfor %}
+
+</div>
+{%endblock%}

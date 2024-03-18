@@ -1,0 +1,89 @@
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    background: #181818;
+    padding: 1.5%;
+    width: 20%;
+    height: 60vh;
+    float: left;
+    color: #fff;
+    border-right: 6px solid #4d4d4d;
+    border-bottom: 6px solid #4d4d4d;
+
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 35px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .5s ease;
+}
+
+aside ul li:hover,
+aside ul a:hover {
+    color: crimson;
+    text-decoration: none;
+    transform: scale(1.12);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+main .alert-warning{
+    float: left;
+    clear: both;
+    max-width: 500px;
+    margin: 20px 35%;
+    text-align: center;
+    color: black;
+}
+
+form {
+    max-width: 500px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.btn-new {
+    color: #fff;
+    float: left;
+    text-align: center;
+    background: darkmagenta;
+}
