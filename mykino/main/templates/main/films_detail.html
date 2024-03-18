@@ -4,6 +4,7 @@
 {%block content%}
 <div class="features">
     <h1>Название: {{one_film.title}}</h1>
+    <img src="{{one_film.photo.url}}" alt="Photo" style="width: 400px; height: auto;">
     <p>Жанр: {{one_film.genre}}</p>
     <p>Рейтинг: {{one_film.rating}}</p>
     <p>Год съемок: {{one_film.year}}</p>
