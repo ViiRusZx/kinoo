@@ -1,0 +1,23 @@
+{%extends 'main/layout.html'%}
+
+{% block title %}ФОРМА ДОБАВЛЕНИЯ НОВОГО ФИЛЬМА{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Форма добавления карточки фильма</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.title }}<br>
+        {{ form.description }}<br>
+        {{ form.genre }}<br>
+        {{ form.year }}<br>
+        {{ form.rating }}<br>
+        {{ form.photo }}<br>
+        <span>{{ error }}</span>
+
+        <button class="btn btn-success" type="submit"> Добавить фильм</button>
+
+    </form>
+</div>
+{%endblock%}
